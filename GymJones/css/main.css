@@ -1,0 +1,356 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Colfax-Black";
+  src: url("../assets/fonts/Colfax/Colfax-Black.ttf"); }
+@font-face {
+  font-family: "Colfax-Medium";
+  src: url("../assets/fonts/Colfax/Colfax-Medium.ttf"); }
+@font-face {
+  font-family: "Colfax-Light";
+  src: url("../assets/fonts/Colfax/Colfax-Light.ttf"); }
+@font-face {
+  font-family: "icomoon";
+  src: url("../assets/fonts/Icons/icomoon.ttf"); }
+[class^="icon-"]:before, [class*="icon-"]:before {
+  font-family: "icomoon";
+  font-style: normal;
+  speak: none;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility; }
+
+/* CREATE ICON CLASSES */
+.icon-arrowdown:before {
+  content: ""; }
+
+.icon-exit:before {
+  content: ""; }
+
+.icon-menu:before {
+  content: ""; }
+
+.icon-search:before {
+  content: ""; }
+
+.icon-menu {
+  width: 31px;
+  color: white; }
+
+.icon-exit {
+  color: white;
+  background-color: transparent;
+  font-size: 24px;
+  position: absolute;
+  top: 20px;
+  right: 30px; }
+
+/* Globals */
+html {
+  height: 100%;
+  background: url("../assets/bg.jpg") no-repeat center center; }
+
+button {
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -appearance: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border: none; }
+
+body {
+  overflow-x: hidden; }
+
+/*--- HEADER --- */
+/* LOGO */
+.logo img {
+  width: 140px;
+  margin-top: 24px;
+  margin-left: 60px; }
+
+/* LOGIN */
+.login {
+  font-family: "Colfax-Medium", serif;
+  position: absolute;
+  top: 23px;
+  right: 108px;
+  list-style-type: none;
+  color: white;
+  padding-right: 48px; }
+
+/* MENU ICON */
+.menu-button {
+  position: absolute;
+  top: 24px;
+  right: 60px;
+  list-style-type: none; }
+
+/*-- MAIN SECTION -- */
+/* ATHLETES TEXT */
+.athletes {
+  color: #FD000F; }
+
+#wrapper {
+  position: relative;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
+
+section {
+  text-align: center;
+  last-child-margin-bottom: 0; }
+  section h1 {
+    font-family: "Colfax-black", serif;
+    font-size: 84px;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: right;
+    color: white;
+    line-height: 96%;
+    margin-right: 10px; }
+  section h2 {
+    font-family: "Colfax-Medium", serif;
+    font-size: 48px;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: left;
+    color: white;
+    line-height: 113%;
+    margin-left: 10px; }
+  section p {
+    font-family: "Colfax-Light", serif;
+    font-size: 18px;
+    color: white;
+    width: 63%;
+    margin: 0 auto; }
+  section p:last-child {
+    margin-bottom: 0; }
+  section .toggle {
+    text-align: center; }
+
+/* BUTTONS */
+.red-btn {
+  font-family: "Colfax-Medium", serif;
+  background-color: #FF0015;
+  color: white;
+  height: 60px;
+  width: 200px;
+  margin-right: 20px;
+  margin-top: 40px;
+  font-size: 18px; }
+
+.white-btn {
+  background: none;
+  border: white 3px solid;
+  color: white;
+  height: 60px;
+  width: 200px;
+  margin-left: 20px;
+  margin-top: 40px;
+  font-size: 18px; }
+
+.login-btn {
+  display: none; }
+
+/* SIDEBAR */
+.page-content {
+  position: relative;
+  z-index: 0;
+  -webkit-transition: 1.5s;
+  -moz-transition: 1.5s;
+  transition: 1.5s; }
+
+.toggle {
+  position: fixed;
+  top: 30px;
+  right: 60px;
+  bottom: 0;
+  -webkit-transition: 1.5s;
+  -moz-transition: 1.5s;
+  transition: 1.5s; }
+
+.login {
+  position: fixed;
+  top: 30px;
+  right: 108px;
+  bottom: 0; }
+
+.sidebar {
+  position: fixed;
+  top: 0px;
+  right: -260px;
+  bottom: 0px;
+  -webkit-transition: 1.5s;
+  -moz-transition: 1.5s;
+  transition: 1.5s;
+  width: 260px;
+  background: #191919;
+  z-index: 0; }
+  .sidebar ul {
+    padding: 50px 0 0 0;
+    margin: 0; }
+  .sidebar li {
+    color: white;
+    font-family: "Colfax-Medium", serif;
+    font-size: 14px;
+    line-height: 286%;
+    -webkit-font-smoothing: antialiased;
+    cursor: pointer;
+    list-style-type: none;
+    padding: 0px 0px 0px 20px;
+    margin: 0px; }
+    .sidebar li:hover, .sidebar li:active {
+      background-color: #030303;
+      color: #FF0015;
+      border-left: 3px solid #FF0015; }
+
+.menu-bottom-section {
+  color: white;
+  font-family: "Colfax-Medium", serif;
+  font-size: 14px;
+  border-top: solid 2px #282828; }
+
+.today-in-gym {
+  padding-top: 10px; }
+
+.menu-wrapper {
+  margin-left: 20px; }
+
+.menu-date {
+  border: solid white 2px;
+  padding: 2px;
+  border-radius: 100%;
+  text-align: center;
+  width: 30%;
+  display: inline-block;
+  height: 50px;
+  width: 50px; }
+  .menu-date p {
+    padding: 1px; }
+
+#menu-month {
+  font-family: "Colfax-Black", serif;
+  line-height: 150%;
+  font-size: 12px;
+  padding: 0px;
+  margin: 1px 0 0 0; }
+
+#menu-day {
+  font-family: "Colfax-Light", serif;
+  font-size: 24px;
+  line-height: 121%;
+  padding: 0px;
+  margin: 0px; }
+
+.fyf-video {
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  padding-left: 15px;
+  padding-top: 8px;
+  position: absolute; }
+
+.menu-bottom {
+  font-family: "Colfax-Light", serif;
+  font-size: 11px;
+  line-height: 165%;
+  padding-right: 10px; }
+
+.read-more {
+  color: #A1A1A1; }
+
+#sidebartoggler {
+  display: none; }
+  #sidebartoggler:checked + .page-wrap .sidebar {
+    right: 0px; }
+  #sidebartoggler:checked + .page-wrap .toggle {
+    right: 260px; }
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 860px) {
+  .buttons br {
+    display: none; }
+
+  .buttons button {
+    padding: 10px 20px; }
+
+  #sidebartoggler:checked + .page-wrap .page-content {
+    padding-right: 0px; }
+  #sidebartoggler:checked + .page-wrap .logo {
+    padding-rigth: 10px; } }
+@media screen and (max-width: 720px) {
+  section h1 {
+    font-size: 70px; }
+
+  section h2 {
+    font-size: 34px; }
+
+  .login {
+    display: none; } }
+@media screen and (max-width: 660px) {
+  section h1 {
+    font-size: 55px; }
+
+  section h2 {
+    font-size: 26px; } }
+@media screen and (max-width: 460px) {
+  .page-content {
+    position: absolute; }
+
+  section {
+    margin-top: 80px; }
+    section h1 {
+      font-size: 35px;
+      margin-right: 2px; }
+    section h2 {
+      font-size: 20px;
+      margin-left: 2px; }
+    section p {
+      display: none; }
+
+  .individuals {
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.7); }
+
+  .login {
+    display: none; }
+
+  .login-btn {
+    display: block;
+    background: none;
+    border: white 3px solid;
+    color: white;
+    height: 60px;
+    width: 90%;
+    font-size: 18px;
+    position: relative;
+    top: 90px;
+    margin: 0 auto; }
+
+  .red-btn {
+    position: relative;
+    top: 80px;
+    margin: 0 auto;
+    width: 90%; }
+
+  .white-btn {
+    position: relative;
+    top: 100px;
+    margin: 0 auto;
+    border: none;
+    color: #FD000F; }
+
+  .icon-menu {
+    right: 10px; }
+
+  #sidebartoggler:checked + .page-wrap .menu-button {
+    top: 80px; } }
+
+/*# sourceMappingURL=main.css.map */
